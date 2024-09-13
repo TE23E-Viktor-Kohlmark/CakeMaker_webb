@@ -32,20 +32,19 @@ body {
     display: grid;
     justify-content: center;
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
     margin-top: 15vh;
     grid-template-areas: 
     "Top Top" 
     "left right";
     background-color: blanchedalmond;
-    padding: 3em;
+    padding: 5em;
     border-radius: 5%;
     margin-top: 20vh;
     margin-bottom: 10vh;
 }
 
 .Top {
-    width: 80%;
     text-align: center;
     font-size: 2em;
     margin-bottom: auto;
@@ -53,7 +52,6 @@ body {
     background-image: url(/images/PrinsesTarta.png);
     background-size: cover;
     margin-bottom: 1em;
-    margin-inline: auto;
     border-radius: 1em;
 }
 
@@ -72,8 +70,6 @@ body {
     font-size: 1.5em;
 }
 .right {
-    width: 40vw;
-    height: 20vh%;
     font-size: 1em;
     grid-area: right;
     border: 0.3em solid #333;
@@ -86,19 +82,16 @@ body {
 
 @media screen and (max-width: 450px) {
     .container {
-        width: 100%;
-        height: 100%;
         margin: auto;
         margin-top: 4em;
         margin-bottom: 1em;
     }
     .left {
-        width: 90%;
-        border: 0px;
+        border: 0;
     }
     .right {
         width: 90%;
-        border: 0px;
+        border: 0;
     }
     .Top {
         margin-inline: auto;
