@@ -17,6 +17,7 @@ body {
     color: black;
 }
 
+
 #footer {
     text-align: center;
     width: 100%;;
@@ -31,38 +32,58 @@ body {
 .container {
     display: grid;
     justify-content: center;
-    margin: 0 auto;
-    width: 60%;
+    align-items: center; 
     margin-top: 15vh;
     grid-template-areas: 
-    "Top Top" 
+    "top top" 
+    "left right"
     "left right";
+
     background-color: blanchedalmond;
     padding: 5em;
+    margin: 0 auto;
+    max-width: 700px;
     border-radius: 5%;
     margin-top: 20vh;
     margin-bottom: 10vh;
 }
-
-.Top {
+.top-rulltarta {
     text-align: center;
     font-size: 2em;
     margin-bottom: auto;
-    grid-area: Top;
-    background-image: url(/images/PrinsesTarta.png);
+    grid-area: top;
+    
     background-size: cover;
     margin-bottom: 1em;
     border-radius: 1em;
 }
 
+
+.top, .top-rulltarta {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: auto;
+    grid-area: top;
+    background-size: cover;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+.top {
+    background-image: url(/images/PrinsesTarta.png);
+}
+
+.top-rulltarta {
+    background-image: url(/images/Rulltarta.png);
+}
+
 .left {
-    width: 90%;
     font-size: 1em;
-    height: 80%;
-    margin-right: 10px;
-    padding: 0.5em;
+    max-height: 250px;
     border: 0.3em solid #333;
-    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 10px;
 
 }
 .left h3 {
@@ -74,29 +95,39 @@ body {
     grid-area: right;
     border: 0.3em solid #333;
     border-radius: 5px;
-    margin-left: 10px;
-    margin-bottom: 1em;
     padding: 0.5em;
+    
 }
 
 
-@media screen and (max-width: 450px) {
+
+
+@media screen and (max-width: 1000px) {
     .container {
-        margin: auto;
-        margin-top: 4em;
-        margin-bottom: 1em;
+        margin-top: 20vh;
+        margin-inline: 10px;
+        padding: 0;
     }
     .left {
-        border: 0;
+        border: 0.3em solid #333;
+        padding: 0;
+        margin-left: 0px;
+    }
+    .left, ul {
+        padding: 10px;
+    }
+    .right, ol {
+        padding: 10px;
     }
     .right {
-        width: 90%;
-        border: 0;
+        width: 40vw;
     }
-    .Top {
-        margin-inline: auto;
-    }
+
     body {
         background-color: blanchedalmond;
+        overflow-y: scroll;
+        height: 100vh;
     }
+
+
 }

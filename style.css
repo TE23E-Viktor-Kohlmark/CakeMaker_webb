@@ -17,8 +17,6 @@ body {
 .container {
     display: grid;
     justify-content: center;
-    align-items: center; 
-    height: 55vh;
     margin-top: 20vh;
     flex-direction: column; 
     text-align: center;
@@ -31,7 +29,6 @@ body {
     padding: 10px;
     border-radius: 10px;
     border: black 5px solid;
-    width: 40vw;
     height: 26vh;
     background-color: #e9c6afff;
     border: 1px solid #333;
@@ -52,8 +49,8 @@ body {
 }
 
 img {
-    width: 60%;
-    position: relative;
+    width: 80%;
+    max-height: 16vh;
     border-radius: 10px;
 }
 
@@ -63,4 +60,19 @@ a {
 }
 .box-bottom:hover, .box-top:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        margin-top: 10vh;
+    }
+    .box-top {
+        width: 80vw;
+        margin-top: 10vh;
+    }
+    .box-bottom {
+        width: 80vw;
+        margin-bottom: 10vh;
+    }
+    
 }
