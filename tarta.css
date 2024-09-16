@@ -69,11 +69,11 @@ body {
     border-radius: 1em;
 }
 .top {
-    background-image: url(/images/PrinsesTarta.png);
+    background-image: url(./images/PrinsesTarta.png);
 }
 
 .top-rulltarta {
-    background-image: url(/images/Rulltarta.png);
+    background-image: url(./images/Rulltarta.png);
 }
 
 .left {
